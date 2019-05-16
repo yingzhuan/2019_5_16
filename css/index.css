@@ -1,0 +1,274 @@
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.header{
+  width:1180px;
+  margin: auto;
+}
+.header img:nth-child(1){
+  margin-right: 35px;
+}
+.header img:nth-child(2){
+  margin-left: 35px;
+}
+
+
+.box{
+  width: 100%;
+  height: 40px;
+  background: #3b8de3;   /*以16进制显示*/
+
+}
+.con{
+  margin: auto;
+  width: 1180px;
+  height: 100%;
+
+}
+.left{
+  width: 690px;
+  height: 100%;
+  float: left;
+
+}
+
+.right{
+  width: 240px;
+  height: 100%;
+  float: right;
+  position: relative;   /*相对定位，为子元素小三角做准备*/
+
+}
+
+.box a{
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  text-decoration-line: none;
+}
+
+/*后代选择器*/
+.left a{
+  float: left; /*浮动，无论是块元素还是行元素，那么就可以在一行显示，可以设置宽高*/
+  width: 20%;
+  height: 100%;
+
+}
+
+.right a{
+  float: left; /*浮动，无论是块元素还是行元素，那么就可以在一行显示，可以设置宽高*/
+  width: 33.333333%;
+  height: 100%;
+}
+.left .active{
+  background-color: #fff;
+  color: #3b8de3;
+  border-top:3px solid orange ;
+}
+
+.box a:hover{
+  background: #fff;
+  color: #3b8de3;
+  border-top:3px solid orange ;
+}
+
+.box .right a:hover{
+  background: blue;
+  color: #fff;
+} 
+
+.box .right a:hover{
+  background: #3b8de3;
+  color: white;
+  border: 0px solid #3b8de3;
+  background: url("../img/img.png") no-repeat -315px -500px;
+}
+
+.login{
+  background: url("../img/img.png") no-repeat -315px -500px;
+}
+
+.sanjiao{
+  width:0px ;
+  height: 0px;
+  border-top: 10px solid white;
+  border-left: 5px solid #3b8de3;
+  border-right: 5px solid #3b8de3;
+  position: absolute;
+  right: -2px;
+  top: 15px;
+}
+
+.hot{
+  width: 1180px;
+  height: 30px;
+  margin: auto;
+  color: #3b8de3;
+  padding-top: 10px;
+  /*padding: 10px;*/
+
+}
+.hot span{
+ /* border: 1px solid red;*/
+  color: #000;
+  float: left;
+  width: 100px;
+  height: 30px;
+}
+.hot a{
+  width: 50px;
+  height: 30px;
+  font-size: 14px;
+  text-decoration: none;
+  float: left;
+}
+
+.wheel-box{
+  padding-top: 0px;
+  border: 1px solid red;
+  height: 380px;
+  position: relative;
+}
+.banner1{
+  height: 380px;
+  position: absolute;
+  left:0px;
+  right:0px;
+  display: block;
+  z-index: 1;
+  background: url("../img/lunbo1.png") no-repeat center;
+}
+.banner2{
+  height: 380px;
+  position: absolute;
+  left:0px;right:0px;
+  color: beige;
+  background: url("../img/lunbo2.png") no-repeat center;
+}
+
+.btns{
+  width:200px;
+  height: 10px;
+  position: absolute;
+  right:100px ;
+  top:350px;
+  z-index: 3;
+}
+.btn1{
+  background: orange;
+  width:40px;
+  height: 5px;
+  position: absolute;
+}
+
+.btn2{
+  background: black;
+  width:40px;
+  height: 5px;
+  position: absolute;
+  z-index: 3;
+  left: 100px;
+}
+
+.hangxian{
+  width: 1180px;
+  margin: auto;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 20px;
+  border-bottom: 2px solid #888888;
+}
+.h1{
+  border: 1px solid red;
+  width: 200px;
+  float: left;
+  margin-bottom: 10px;
+}
+.h2{
+  font-size: 20px;
+  height: 40px;
+  margin-left:100px;
+  float:right;
+}
+.h1 span{
+  font-size: 30px;
+  font-family: "微软雅黑";
+  float: left;
+  width: 180px;
+}
+.h2 a{
+  float: left;
+  padding-left: 20px;
+  width: 50px;
+  color: #000;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+.h2 a:hover{
+  background:#b3d4fc;
+  border-bottom: 2px solid #3b8de3;
+}
+
+.h2 .active{
+  background:#b3d4fc;
+  border-bottom: 2px solid blue;
+}
+
+.jipiao{
+  position: relative;
+  margin: auto;
+  margin-top:20px;
+  width: 1200px;
+  height: 440px;
+}
+ul,li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.jipiao li{
+  border: 1px solid red;
+  float: left;
+  width:225px;
+  height: 150px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  background:url("../img/tejia.png") no-repeat;
+}
+
+.jipiao li a{
+  text-decoration: none;
+}
+
+.jipiao li a:hover{
+  background: white;
+  color: #000;
+
+}
+.difang{
+  border: 1px solid blue;
+  width: 180px;
+  height: 40px;
+  margin: auto;
+  text-align: center;
+  line-height: 40px;
+}
+
+.difang span{
+  font-size: 20px;
+  font-family: "微软雅黑";
+}
+.arrow{
+  border: 1px solid blueviolet;
+  width: 40px;
+  height: 5px;
+  background:url("../img/img.png") no-repeat -315px -500px;
+}
+
+
+
+
